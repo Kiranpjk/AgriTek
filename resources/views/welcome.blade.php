@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
     <title>Agri-Trek</title>
     @viteReactRefresh
     @vite('resources/js/app.jsx')
