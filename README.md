@@ -1,61 +1,171 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Agri-Trek: Precision Clustering of Aerial Objects Using Trajectory Analysis
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Agri-Trek Platform](https://pplx-res.cloudinary.com/image/private/user_uploads/Q details, land parcels, government schemes, and analyzing aerial imagery using trajectory-based clustering techniques.
 
-## About Laravel
+## 📋 Table of Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [About](#about)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌾 About
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Agri-Trek is a specialized software solution designed to computerize farmer and land details along with beneficiary schemes information. The platform integrates advanced aerial image analysis capabilities using trajectory-based clustering algorithms to help identify patterns and insights from drone or satellite imagery of agricultural lands.
 
-## Learning Laravel
+## ✨ Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Farmer Management**: Register and manage farmer profiles with personal and contact details
+- **Land Parcel Management**: Track land ownership, size, location, and characteristics
+- **Scheme Management**: Configure and monitor government schemes and benefits
+- **Beneficiary Tracking**: Link farmers to schemes and track application status
+- **Aerial Data Analysis**: Upload and process aerial imagery
+- **Trajectory Analysis**: Precision clustering of objects identified in aerial imagery
+- **Interactive Dashboard**: Visual representation of key metrics and insights
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 💻 Technologies
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Backend**:
+  - Laravel 11.x
+  - MySQL/PostgreSQL
+  - RESTful API architecture
 
-## Laravel Sponsors
+- **Frontend**:
+  - React.js
+  - Material UI (MUI)
+  - Chart.js for data visualization
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Installation
 
-### Premium Partners
+### Prerequisites
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+- PHP >= 8.1
+- Composer
+- Node.js >= 16.x
+- NPM or Yarn
+- MySQL/PostgreSQL
 
-## Contributing
+### Setup
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/agri-trek.git
+cd agri-trek
+```
 
-## Code of Conduct
+2. Install PHP dependencies:
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. Install JavaScript dependencies:
+```bash
+npm install
+```
 
-## Security Vulnerabilities
+4. Create environment file:
+```bash
+cp .env.example .env
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. Configure your database in the `.env` file:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=agri_trek
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-## License
+6. Generate application key:
+```bash
+php artisan key:generate
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Run migrations:
+```bash
+php artisan migrate
+```
+
+8. Build frontend assets:
+```bash
+npm run dev
+```
+
+9. Start the development server:
+```bash
+php artisan serve
+```
+
+## 🖥️ Usage
+
+1. Access the application at `http://localhost:8000`
+2. Register an admin account or use the default credentials:
+   - Email: admin@agritrek.com
+   - Password: password
+3. Start by adding farmers, lands, and schemes through the intuitive interface
+4. Upload aerial data for analysis through the Aerial Data section
+5. Run trajectory analysis on uploaded data to identify patterns and clusters
+
+## 📚 API Documentation
+
+The API endpoints are organized around the following resources:
+
+- `/api/farmers` - Farmer management endpoints
+- `/api/lands` - Land parcel management endpoints
+- `/api/schemes` - Scheme management endpoints
+- `/api/beneficiaries` - Beneficiary tracking endpoints
+- `/api/aerial-data` - Aerial data management endpoints
+- `/api/trajectory-analyses` - Analysis endpoints
+
+For detailed API documentation, refer to the [API Documentation](docs/api.md) file.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Last updated: April 27, 2025
+
+Citations:
+[1] https://pplx-res.cloudinary.com/image/private/user_uploads/QwMbxdKlffztxzg/Screenshot-2025-04-27-103913.jpg
+[2] https://github.com/othneildrew/Best-README-Template
+[3] https://www.youtube.com/watch?v=PF6z8Rs0bhY
+[4] https://www.hatica.io/blog/best-practices-for-github-readme/
+[5] https://www.restack.io/p/guide-to-developing-ai-applications-answer-react-app-readme-example
+[6] https://github.com/Fernanda-Kipper/Readme-Templates/blob/main/simple/frontend.md
+[7] https://github.com/evelinsteiger/README-template
+[8] https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4
+[9] https://github.com/aditya-sridhar/simple-reactjs-app/blob/master/README.md
+[10] https://www.dhiwise.com/post/simplify-deployment-how-to-deploy-react-app-to-github-page
+[11] https://www.reddit.com/r/reactjs/comments/my36oc/good_resources_for_writing_readme/
+[12] https://mui.com/material-ui/getting-started/example-projects/
+[13] https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+[14] https://www.youtube.com/watch?v=Q9n2mLqXFpU
+[15] https://readmi.xyz/templates
+[16] https://mui.com/material-ui/
+[17] https://github.com/obrm/react-best-practices-design-pattens
+[18] https://dev.to/jacksonkasi/how-to-make-a-documentation-website-in-react-js-56mk
+[19] https://github.com/gitname/react-gh-pages
+[20] https://www.topcoder.com/thrive/articles/how-to-set-up-and-implement-material-ui-with-react-js
+[21] https://www.reddit.com/r/reactjs/comments/1dwi8p8/i_made_my_own_react_best_practices_readme_on/
+
+---
+Answer from Perplexity: pplx.ai/share
