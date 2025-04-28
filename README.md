@@ -136,36 +136,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Last updated: April 27, 2025
-
-Citations:
-[1] https://pplx-res.cloudinary.com/image/private/user_uploads/QwMbxdKlffztxzg/Screenshot-2025-04-27-103913.jpg
-[2] https://github.com/othneildrew/Best-README-Template
-[3] https://www.youtube.com/watch?v=PF6z8Rs0bhY
-[4] https://www.hatica.io/blog/best-practices-for-github-readme/
-[5] https://www.restack.io/p/guide-to-developing-ai-applications-answer-react-app-readme-example
-[6] https://github.com/Fernanda-Kipper/Readme-Templates/blob/main/simple/frontend.md
-[7] https://github.com/evelinsteiger/README-template
-[8] https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4
-[9] https://github.com/aditya-sridhar/simple-reactjs-app/blob/master/README.md
-[10] https://www.dhiwise.com/post/simplify-deployment-how-to-deploy-react-app-to-github-page
-[11] https://www.reddit.com/r/reactjs/comments/my36oc/good_resources_for_writing_readme/
-[12] https://mui.com/material-ui/getting-started/example-projects/
-[13] https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
-[14] https://www.youtube.com/watch?v=Q9n2mLqXFpU
-[15] https://readmi.xyz/templates
-[16] https://mui.com/material-ui/
-[17] https://github.com/obrm/react-best-practices-design-pattens
-[18] https://dev.to/jacksonkasi/how-to-make-a-documentation-website-in-react-js-56mk
-[19] https://github.com/gitname/react-gh-pages
-[20] https://www.topcoder.com/thrive/articles/how-to-set-up-and-implement-material-ui-with-react-js
-[21] https://www.reddit.com/r/reactjs/comments/1dwi8p8/i_made_my_own_react_best_practices_readme_on/
-
----
-Answer from Perplexity: pplx.ai/share
