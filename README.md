@@ -1,7 +1,7 @@
 # Agri-Trek: Precision Clustering of Aerial Objects Using Trajectory Analysis
 
-![Agri-Trek Platform](https://pplx-res.cloudinary.com/image/private/user_uploads/Q details, land parcels, government schemes, and analyzing aerial imagery using trajectory-based clustering techniques.
-
+![Agri-Trek Platform] details, land parcels, government schemes, and analyzing aerial imagery using trajectory-based clustering techniques.
+Deployed Link: https://agritek-main-hbco7y.laravel.cloud/
 ## 📋 Table of Contents
 
 - [About](#about)
